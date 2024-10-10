@@ -49,8 +49,8 @@ button:hover {
 }
 
 .ingredient-list {
-    list-style-type: none; /* Remove default bullets */
-    padding: 0; /* Remove padding */
+    list-style-type: none; 
+    padding: 0; 
 }
 
 .ingredient-list li {
@@ -61,7 +61,7 @@ button:hover {
 }
 
 .step.highlight {
-    display: block; /* Show highlighted step */
+    display: block; 
     background-color: #e7f3fe;
     transition: background-color 0.5s;
 }
@@ -91,7 +91,7 @@ button:hover {
     }
 }
 
-/* Print styles */
+
 @media print {
     body {
         background: none;
@@ -103,6 +103,6 @@ button:hover {
         padding: 10px;
     }
     button {
-        display: none; /* Hide buttons in print */
+        display: none; 
     }
 }
