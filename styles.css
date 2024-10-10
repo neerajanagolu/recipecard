@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.recipe-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    text-align: center;
+}
+
+.recipe-title {
+    color: #3b3b3b;
+}
+
+.recipe-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+.ingredients, .steps {
+    display: none;
+    margin-top: 20px;
+}
+
+.ingredient-list {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0; /* Remove padding */
+}
+
+.ingredient-list li {
+    background-color: #e7f3fe; 
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 5px 0; 
+}
+
+.step.highlight {
+    display: block; /* Show highlighted step */
+    background-color: #e7f3fe;
+    transition: background-color 0.5s;
+}
+
+.ingredients.active {
+    display: block;
+}
+
+.ingredient:hover, .step:hover {
+    color: #d9534f;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.prep-time {
+    margin-top: 20px;
+}
+
+
+@media (max-width: 600px) {
+    .recipe-card {
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+/* Print styles */
+@media print {
+    body {
+        background: none;
+    }
+    .recipe-card {
+        box-shadow: none;
+        border: none;
+        margin: 0;
+        padding: 10px;
+    }
+    button {
+        display: none; /* Hide buttons in print */
+    }
+}

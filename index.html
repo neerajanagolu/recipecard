@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Recipe Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="recipe-card">
+        <h1 class="recipe-title">Chocolate Cake</h1>
+        <img src="image.jpg" alt="Chocolate Cake" class="recipe-image">
+        <button id="toggle-ingredients">Show Ingredients</button>
+        <div class="ingredients" id="ingredients">
+            <h2>Ingredients</h2>
+            <ul class="ingredient-list">
+                <li>1 and 3/4 cups of flour</li>
+                <li>3/4 cup of cocoa powder</li>     
+                <li>1 and 1/2 tsp baking powder and baking soda</li>
+                <li>2 tsp vanilla extract</li>
+                <li>2 cups of sugar</li>
+                <li>2 large eggs</li>
+                <li>1 cup of milk</li>
+                <li>1/2 cup of vegetable oil</li>
+                <li>1 cup of boiling water</li>
+            </ul>
+        </div>
+        <button id="start-cooking">Start Cooking</button>
+        <button id="next-step" style="display:none;">Next</button>
+        <div id="timer" style="display:none;">Time Remaining: <span id="time-remaining">45:00</span></div>
+        <div class="steps" id="steps">
+            <h2>Instructions</h2>
+            <ol>
+                <li class="step">Preheat your oven to 350°F for at least 15mins.</li>
+                <li class="step">Grease and flour two 9-inch round pans.</li>
+                <li class="step">place a sieve over a bowl, mix all the dry ingredients.</li>
+                <li class="step">Mix well after adding eggs, milk, oil, and vanilla to the dry mixture.</li>
+                <li class="step">Pour in the boiling water and mix well.</li>
+                <li class="step">Divide the batter between the prepared pans.</li>
+                <li class="step">Bake for 28-30 minutes.</li>
+                <li class="step">Then invert to a cooling rack, cool completely before frosting.</li>
+            </ol>
+        </div>
+        <div class="prep-time">
+            <p>Preparation Time: <span id="time">45 minutes</span></p>
+            <p>Servings: <span id="servings">12</span></p>
+        </div>
+        <button id="print-recipe">Print Recipe</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
